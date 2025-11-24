@@ -110,3 +110,4 @@ const newUsers = {
         points: 50
     }
 };
+
