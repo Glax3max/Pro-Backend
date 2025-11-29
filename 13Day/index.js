@@ -51,7 +51,7 @@
 
         // console.group
         const names = ['Asabeneh', 'Brook', 'David', 'John']
-        const countries = [
+        const countries2 = [
         ['Finland', 'Helsinki'],
         ['Sweden', 'Stockholm'],
         ['Norway', 'Oslo']
@@ -63,7 +63,7 @@
         city: 'Helsinki',
         age: 250
         }
-        const users = [
+        const users2 = [
         {
             name: 'Asabeneh',
             title: 'Programmer',
@@ -99,12 +99,12 @@
         console.groupEnd()
 
         console.group('Countries')
-        console.log(countries)
+        console.log(countries2)
         console.groupEnd()
 
         console.group('Users')
         console.log(user)
-        console.log(users)
+        console.log(users2)
         console.groupEnd()
 
         // console.count()
