@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>30DaysOfJavaScript:11 Day </title>
+    <style>
+        body{
+            padding:0;
+            margin:0;
+        }
+        
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        .container1 {
+            height:70vh;
+            background: url("images/globe-2.jpg");
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position:center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .worldList {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2.5em;
+            font-weight:600;
+            letter-spacing: 8px;
+            color:#fff;
+        }
+
+        .numCon {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 600;
+            color:#fff;
+        }
+
+        .filterBtn {
+            margin:10px 0;
+            display: flex;
+            justify-content: center;
+        }
+        .filterBtn button {
+            padding:9px 15px;
+            background-color: #754f94;
+            color:#fff;
+            border: none;
+            margin:1px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .filterBtn button:hover {
+            background-color: #6d1ead;
+            font-weight: 600;
+
+        }
+
+        .searchBar {
+             box-sizing: border-box;
+            all: unset;
+            background-color: #fff;
+            margin-top: 31px;
+            border:none;
+            width:30vw;
+            text-align: center;
+            border-radius: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding:10px 0;
+            font-size: 12px;
+            font-weight: 500;
+            border: solid 1px transparent;
+        }
+        .searchBar:hover {
+            border:1px solid #6d1ead;
+            box-shadow: 2px 2px 12px #6d1ead;
+            transition: 0.8s;
+        }
+
+      
+        .searchBtn {
+            background-color:transparent;
+            border: none;
+            font-size: larger;
+            width:55px;
+        }
+        .searchBtn:hover {
+            font-size: x-large;
+        }
+        .container2 {
+            display: flex;
+            margin:100px auto;
+            flex-wrap: wrap;
+            width:80vw;
+        }
+        .container2 div {
+            display: flex;
+            justify-content: space-around;
+            background: url("images/map_image.jpg");
+            background-repeat: no-repeat;
+            filter: url(#fff);
+            font-size:medium;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 600;
+            background-size: cover;
+            align-items: center;
+            text-align: center;
+            width:10%;
+            margin:4px 20px;
+            height:120px;
+            border-radius: 4px;
+            box-shadow: 2px 2px 12px #ddd;
+            border:1px solid #555
+        }
+
+        .container2 div:hover {
+            box-shadow: 2px 2px 12px #555;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+	<div class="container1">
+        <div class="worldList">WORLD COUNTRY LIST</div>
+        <div class="numCon">Total Number of countries: 193</div>
+        <div class="startWith"></div>
+        <div class="filterBtn" style="width:50vw;">
+            <button class="strtWordBtn">STARTING WORD</button>
+            <button class="anyWord">SEARCH IN ANY WORD</button>
+            <button style="display: inline-flex"><span>↓</span><span style="display: flex;flex-direction:column;font-size: 6px;margin-top: 1px;"><span>A</span><span>Z</span></span></button>
+        </div>
+        <div class="inptTag">
+            <input class="searchBar" placeholder="Search Country ..." />
+            <button class="searchBtn">🔍</button>
+        </div>
+    </div>
+    <div class="container2">
+
+    </div>
+
+	<script type="module" src="./Data/countries.js"></script>
+	<script type="module" src="./script/main.js"></script>
+
+</body>
+
+</html>
