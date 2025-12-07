@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding:0;
+            margin:0;
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        .textSkill , .emoji {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+            font-weight: 700;
+            color:#fff;
+        }
+        .textSkill {
+            display: inline-block;
+            width: 300px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .skillCards {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 50px;
+            padding:54px;
+
+        }
+        .card {
+            height:300px;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            justify-content: space-around;
+        }
+        .skillCards .card:hover {
+            background-color:#fde8e8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="name1">Abhishek Gupta</div>
+        <div class="skills" style="background-color:#fde8e8;padding:23px 0;margin-left:54px;"><span class="emoji"></span><span class="textSkill"></span></div>
+        <div class="about">"Innovative Software Engineer with expertise in building scalable web applications using Python, JavaScript (React/Node.js), and cloud platforms (AWS). Passionate about optimizing performance and developing efficient, user-friendly solutions, with a proven track record in Agile environments. Seeking to leverage strong problem-solving skills to enhance system architecture</div>
+        <div class="skillCards">
+            <div class="card">Javascript</div>
+            <div class="card">Python</div>
+            <div class="card">React</div>
+        </div>
+        <div class="techSkills" style="font-size:large;padding:54px 54px">The technologies I teach <span class="tSkill" style="font-size: larger;font-weight:bold;"></span></div>
+    </div>
+
+</body>
+<script src="./scripts/index.js"></script>
+</html>
